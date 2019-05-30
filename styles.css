@@ -1,0 +1,615 @@
+/* ---------------------General--------------------- */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic");
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #1d1d1d;
+}
+
+.container {
+  max-width: 956px;
+  padding: 0 8px;
+  margin: 0 auto;
+}
+
+/* ---------------------Header--------------------- */
+
+header {
+  height: 74px;
+  box-shadow: 0 0 16px rgba(38, 38, 38, 0.16);
+  margin-bottom: 32px;
+}
+
+.header__content,
+.header__addressPart,
+.header__rightPart,
+.header__leftPart {
+  display: flex;
+  align-items: center;
+}
+
+.header__content {
+  height: 100%;
+  margin-top: -2px;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin-right: 123px;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo img {
+  width: 120px;
+  height: 14px;
+}
+
+.asap,
+.address,
+header .signIn,
+header .register {
+  height: 40px;
+
+  box-sizing: border-box;
+  border-radius: 2px;
+
+  display: flex;
+  align-items: center;
+}
+
+.asap,
+header .signIn,
+header .register {
+  justify-content: center;
+}
+
+.asap {
+  width: 65px;
+  background: #fff;
+}
+
+.asap,
+.address {
+  border: 1px solid #e0e0e0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1d1d1d;
+}
+
+header .addressPart__text {
+  margin: 0 9px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #626262;
+}
+
+.address {
+  background: url(images/navigate.svg) no-repeat scroll 11px 12px;
+  background-size: 12px 14.97px;
+  padding-left: 36px;
+  width: 292px;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header .signIn,
+header .register {
+  width: 80px;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.header__rightPart a {
+  margin-left: 16px;
+}
+
+header .signIn,
+header .register:hover {
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  color: #1d1d1d;
+  transition: all 0.3s;
+}
+
+header .register,
+header .signIn:hover {
+  background: #262626;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+/* --------------------Main---------------------- */
+
+.main__content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+
+main .search {
+  height: 40px;
+  background: url(images/search.svg) no-repeat scroll 0 8px;
+  background-size: 22px 21.9px;
+  border: none;
+  padding-left: 30px;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #626262;
+  opacity: 0.5;
+}
+
+main hr {
+  margin-bottom: 20px;
+  margin-top: 7px;
+  background: #757575;
+  opacity: 0.3;
+}
+
+.mobileAddressBlock {
+  display: none;
+}
+
+.mobileAddressBlock .address {
+  max-width: 223px;
+}
+
+.mobileAddressBlock .addressPart__text {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+main h1 {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 34px;
+  margin-top: 36px;
+  margin-bottom: 15px;
+}
+
+.restaurants {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 16px;
+}
+
+.restaurant__item {
+  margin-bottom: 16px;
+  transition: all 0.3s;
+}
+
+.restaurant__item a {
+  text-decoration: none;
+  color: #1d1d1d;
+}
+
+.restaurant__preview {
+  width: 100%;
+  height: 256px;
+  overflow: hidden;
+}
+
+.rest_1 {
+  background: url(./images/rest_1.svg) no-repeat center;
+  background-size: cover;
+}
+
+.rest_2 {
+  background: url(./images/rest_2.svg) no-repeat center;
+  background-size: cover;
+}
+
+.rest_3 {
+  background: url(./images/rest_3.svg) no-repeat center;
+  background-size: cover;
+}
+
+.rest_4 {
+  background: url(./images/rest_4.svg) no-repeat center;
+  background-size: cover;
+}
+
+.rest_5 {
+  background: url(./images/rest_5.svg) no-repeat center;
+  background-size: cover;
+}
+
+.rest_6 {
+  background: url(./images/rest_6.svg) no-repeat center;
+  background-size: cover;
+}
+
+.rest_7 {
+  background: url(./images/rest_7.svg) no-repeat center;
+  background-size: cover;
+}
+
+.rest_8 {
+  background: url(./images/rest_8.svg) no-repeat center;
+  background-size: cover;
+}
+
+.rest_9 {
+  background: url(./images/rest_9.svg) no-repeat center;
+  background-size: cover;
+}
+
+/* .restaurant__preview img {
+  width: 100%;
+  margin-bottom: 12px;
+} */
+
+.restaurant__name {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+
+.restaurant__generalProducts {
+  font-size: 14px;
+  line-height: 21px;
+  color: #626262;
+  margin-bottom: 4px;
+}
+
+.restaurant__timeOfDelivery {
+  font-size: 13px;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+
+/* --------------------Footer---------------------- */
+
+.buttonUp {
+  width: 80px;
+  height: 80px;
+  background: #59bd5a;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+}
+
+footer {
+  margin: 0;
+  background-color: #262626;
+  color: #fff;
+}
+
+.footer__logo {
+  display: flex;
+}
+
+.footer__logo a {
+  margin-top: 56px;
+  margin-bottom: 35px;
+}
+
+.footer__logo img {
+  width: 192px;
+  height: 21px;
+}
+
+footer .hr {
+  height: 1px;
+  background: #fff;
+  opacity: 0.4;
+}
+
+footer select {
+  background: url(images/select_arrow.svg) no-repeat scroll 203px 12px,
+    url(images/world.svg) no-repeat scroll 16px 12px,
+    #3b3b3b;
+  background-size: 16px 16px;
+  padding-left: 48px;
+  padding-right: 30px;
+  color: #fff;
+  width: 227px;
+  height: 40px;
+  border: none;
+  border-radius: 2px;
+  margin-top: 32px;
+  margin-bottom: 33px;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+}
+
+footer span {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+footer span.greenHash {
+  color: #49a144;
+}
+
+.footer__socialIcons {
+  margin-top: 17px;
+}
+
+.footer__socialIcons a {
+  padding-right: 8px;
+}
+
+.footer__socialIcons a:hover {
+  color: #49a144;
+}
+
+.footer__centerPart {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 16px;
+  margin-bottom: 33px;
+}
+
+.footer__list {
+  margin-top: 35px;
+  padding-left: 6px;
+}
+
+.footer__list li {
+  list-style: none;
+  margin-bottom: 19px;
+}
+
+.footer__list li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.footer__list li a:hover {
+  color: #49a144;
+}
+
+.downloadApp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 40px;
+  margin: 41px 35px;
+}
+
+.downloadApp .appStore {
+  float: right;
+  width: 120px;
+  height: 40px;
+}
+
+.downloadApp .googlePlay {
+  width: 135px;
+  height: 40px;
+}
+
+.footer_bottomPart {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 16px;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.footer_bottomPart div {
+  margin: 39px 0 40px;
+}
+
+.footer_bottomPart a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer_bottomPart a:hover {
+  color: #49a144;
+}
+
+/* --------------------Media---------------------- */
+
+@media (max-width: 1023px) and (min-width: 640px) {
+  .header__logo {
+    margin-right: 0;
+  }
+
+  .header__logo img {
+    width: 107px;
+    height: 13px;
+  }
+
+  .asap,
+  .address {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .addressPart__text {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  header .address {
+    max-width: 215px;
+  }
+
+  header .asap {
+    width: 57px;
+    margin-left: 20px;
+  }
+
+  .main__content {
+    margin-bottom: 32px;
+  }
+
+  .restaurants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+  }
+
+  #languages {
+    background: url(images/select_arrow.svg) no-repeat scroll 152px 12px, url(images/world.svg) no-repeat scroll 16px 12px, #3b3b3b;
+    background-size: 16px 16px;
+    padding-left: 48px;
+    padding-right: 30px;
+    color: #fff;
+    width: 176px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 639px) {
+  .header__logo {
+    margin-right: 0;
+  }
+
+  .header__logo img {
+    width: 106px;
+    height: 12.5px;
+  }
+
+  .header__addressPart {
+    display: none;
+  }
+
+  header .register,
+  header .signIn {
+    width: 72px;
+  }
+
+  header .register {
+    margin-right: 0;
+  }
+
+  .basket {
+    display: none;
+  }
+
+  main .search {
+    height: 40px;
+    background: url(images/search.svg) no-repeat scroll 0 12px;
+    background-size: 16px 16px;
+    border: none;
+    padding-left: 24px;
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .mobileAddressBlock {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: 4px 0;
+  }
+  
+  .mobileAddressBlock > div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mobileAddressBlock > div:first-child {
+    margin-right: 16px;
+  }
+
+  .asap,
+  .address {
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .main__content {
+    margin-bottom: 32px;
+  }
+
+  .restaurants {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 16px;
+  }
+
+  .restaurant__preview {
+    height: 246px;
+  }
+
+  .restaurant__preview img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .footer__centerPart {
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+  }
+
+  #languages {
+    background: url(images/select_arrow.svg) no-repeat scroll 149px 12px, url(images/world.svg) no-repeat scroll 16px 12px, #3b3b3b;
+    background-size: 16px 16px;
+    padding-left: 48px;
+    padding-right: 30px;
+    color: #fff;
+    width: 173px;
+  }
+
+  .footer__list {
+    padding-left: 0;
+  }
+
+  .footer__list_first {
+    margin-top: 31px;
+    margin-bottom: 23px;
+  }
+
+  .footer__list_last {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .downloadApp {
+    grid-column-gap: 24px;
+    margin: 24px 0 20px;
+  }
+
+  .downloadApp .appStore {
+    float: right;
+    width: 109px;
+    height: 36px;
+  }
+  
+  .downloadApp .googlePlay {
+    width: 124px;
+    height: 36px;
+  }
+
+  .footer_bottomPart {
+    grid-template-columns: 1fr;
+    padding: 40px 0;
+  }
+
+  .footer_bottomPart > div {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .footer_bottomPart > div:last-child {
+    margin-bottom: 0;
+  }
+
+  .buttonUp {
+    width: 64px;
+    height: 64px;
+  }
+}
