@@ -9,7 +9,10 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #1d1d1d;
+  box-sizing: 
 }
+
+
 
 .container {
   max-width: 956px;
