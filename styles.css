@@ -9,7 +9,6 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #1d1d1d;
-  box-sizing: 
 }
 
 
@@ -75,6 +74,12 @@ header .register {
 .asap {
   width: 65px;
   background: #fff;
+  transition: all 0.3s;
+}
+
+.asap:hover {
+  background: #262626;
+  color: #fff;
 }
 
 .asap,
@@ -83,6 +88,7 @@ header .register {
   font-size: 16px;
   line-height: 24px;
   color: #1d1d1d;
+  outline: none;
 }
 
 header .addressPart__text {
@@ -97,6 +103,10 @@ header .addressPart__text {
   background-size: 12px 14.97px;
   padding-left: 36px;
   width: 292px;
+}
+
+.address:focus {
+  border: 1px solid #262626;
 }
 
 header a {
@@ -273,10 +283,11 @@ main h1 {
   font-weight: bold;
 }
 
-.restaurant__preview__hover:hover {
+.restaurant__item:hover .restaurant__preview__hover {
   background: rgba(0,0,0,0.7);
   opacity: 1;
 }
+
 
 .restaurant__name {
   margin-top: 16px;
